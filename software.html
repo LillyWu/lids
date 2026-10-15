@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Open Source · LIDS @ UAlberta</title>
+  <meta
+    name="description"
+    content="Open-source systems software and benchmarking tools from LIDS at the University of Alberta."
+  />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <style>
+    /* Keep the footer at the bottom on short pages. */
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      min-height: 100dvh;
+    }
+
+    /* Match the LIDS homepage layout and typography. */
+    .software-page {
+      flex: 1;
+      width: min(calc(100% - 16px), var(--width));
+      min-height: 0;
+      margin: 30px auto 40px;
+    }
+
+    .software-page p,
+    .software-page li {
+      font-size: 1.0rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: var(--text);
+      hyphens: none;
+      word-break: normal;
+    }
+
+    .software-page > p {
+      margin: 0 0 1rem;
+      text-align: left;
+    }
+
+    /* Project list */
+    .software-page .resource-list {
+      margin: 0;
+      padding-left: 1.5rem;
+    }
+
+    .software-page .resource-list li {
+      margin: 0 0 1rem;
+    }
+
+    .software-page .resource-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .software-page .resource-title {
+      display: inline-block;
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .software-page .resource-list p {
+      margin: 0;
+      text-align: left;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 850px) {
+      .software-page {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Navigation -->
+  <header class="topbar">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a class="brand" href="index.html">
+        LIDS <span>@ UAlberta</span>
+      </a>
+
+      <ul class="nav-links" id="navigation">
+        <li><a href="people.html">People</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li>
+          <a href="software.html" aria-current="page">
+            Open Source
+          </a>
+        </li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="positions.html">Openings</a></li>
+      </ul>
+
+      <button
+        type="button"
+        class="icon-button search-toggle"
+        aria-controls="search-panel"
+        aria-expanded="false"
+        aria-label="Search website"
+      >⌕</button>
+
+      <button
+        type="button"
+        class="icon-button menu-toggle"
+        aria-controls="navigation"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >☰</button>
+    </nav>
+
+    <div class="search-panel" id="search-panel" hidden>
+      <label for="search">Search the website</label>
+      <input
+        id="search"
+        type="search"
+        placeholder="Search pages and people"
+      />
+      <p id="search-status" role="status"></p>
+      <div id="search-results"></div>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="software-page" id="main">
+
+
+    <p>
+      Open-source systems software and benchmarking
+      tools.
+    </p>
+
+    <h4>Past Projects</h4>
+    <ul class="resource-list">
+
+      <li>
+        <a
+          class="resource-title"
+          href="https://github.com/elastisys/MicroRCA"
+        >MicroRCA</a>:
+          Root-cause localization and diagnosis
+          for microservice performance issues.
+      </li>
+
+      <li>
+        <a
+          class="resource-title"
+          href="https://hub.docker.com/r/lillywu/sock-shop"
+        >Fault-injected microservices benchmark</a>: 
+          Benchmark workloads for evaluating diagnosis and recovery in microservice systems.
+      </li>
+
+      <li>
+        <a
+          class="resource-title"
+          href="https://github.com/umassos/faillite"
+        >FailLite</a>: 
+          Failure-resilient model serving for
+          resource-constrained edge environments.
+      </li>
+
+      <li>
+        <a
+          class="resource-title"
+          href="https://github.com/umassos/CarbonEdge"
+        >CarbonEdge</a>: Carbon-aware edge placement framework.
+
+      </li>
+
+    </ul>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer home-footer">
+    <div class="home-footer-inner">
+      <p>LIDS · University of Alberta</p>
+
+      <nav aria-label="Footer links">
+        <a href="mailto:lwu15@ualberta.ca">Email</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/lillywu">GitHub</a>
+        <span aria-hidden="true">·</span>
+        <a href="positions.html">Openings</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
