@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Openings · LIDS @ UAlberta</title>
+  <meta
+    name="description"
+    content="PhD, MSc, and postdoctoral research opportunities at LIDS, University of Alberta."
+  />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <style>
+    /* Match the typography and page spacing of index.html. */
+    .openings-page {
+      margin-top: 30px;
+      margin-bottom: 40px;
+      min-height: 0;
+    }
+
+    .openings-page p,
+    .openings-page li {
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: 400;
+      color: var(--text);
+    }
+
+    .openings-page p {
+      max-width: 100%;
+      margin: 0 0 1rem;
+      text-align: justify;
+      hyphens: none;
+      word-break: normal;
+      overflow-wrap: normal;
+    }
+
+    .openings-page > section {
+      margin-top: 1.5rem;
+    }
+
+    .openings-page > section h2 {
+      margin-bottom: 0.75rem;
+    }
+
+    .openings-page ul {
+      margin: 0 0 1rem;
+      padding-left: 1.5rem;
+    }
+
+    .openings-page li + li {
+      margin-top: 0.4rem;
+    }
+
+    @media (max-width: 850px) {
+      .openings-page {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <a class="brand" href="index.html">LIDS <span>@ UAlberta</span></a>
+
+      <ul class="nav-links" id="navigation">
+        <li><a href="people.html">People</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="software.html">Open Source</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="positions.html" aria-current="page">Openings</a></li>
+      </ul>
+
+      <button
+        type="button"
+        class="icon-button search-toggle"
+        aria-controls="search-panel"
+        aria-expanded="false"
+        aria-label="Search website"
+      >⌕</button>
+
+      <button
+        type="button"
+        class="icon-button menu-toggle"
+        aria-controls="navigation"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >☰</button>
+    </nav>
+
+    <div class="search-panel" id="search-panel" hidden>
+      <label for="search">Search the website</label>
+      <input
+        id="search"
+        type="search"
+        placeholder="Search pages and people"
+      />
+      <p id="search-status" role="status"></p>
+      <div id="search-results"></div>
+    </div>
+  </header>
+
+  <main class="openings-page" id="main">
+    <p>
+      Thank you for your interest in joining LIDS at the University of Alberta!
+      We are currently recruiting PhD and MSc students and one postdoctoral
+      researcher. If you are interested in joining our group, please first
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScuCTDtrFmIIDQtigbPf3uJAygap48OoctuP4akr9CLDMFkUA/viewform?usp=dialog">fill out our interest form</a>
+      and read the following instructions on how to apply to the related graduate programs at UAlberta.
+    </p>
+
+    <section aria-labelledby="postdocs-heading">
+      <h3 id="postdocs-heading">Prospective Postdoctoral Researchers</h3>
+      <p>
+        We are actively recruiting one postdoctoral researcher. Applicants
+        should have a strong publication record in leading systems or machine
+        learning venues, or substantial software engineering experience
+        developing distributed systems or machine learning systems.
+        If you are interested, please
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScuCTDtrFmIIDQtigbPf3uJAygap48OoctuP4akr9CLDMFkUA/viewform?usp=dialog">fill out the interest form</a>
+        and <a href="mailto:lwu15@ualberta.ca">email us</a> with a brief introduction.
+      </p>
+    </section>
+
+    <section aria-labelledby="graduate-heading">
+      <h3 id="graduate-heading">Prospective Graduate Students</h3>
+      <p>
+        We primarily recruit PhD and MSc students through the
+        <a href="https://www.ualberta.ca/en/computing-science/index.html">Department of Computing Science</a>
+        at the University of Alberta. Please review the
+        <a href="https://www.ualberta.ca/en/computing-science/graduate-studies/programs-and-admissions/applications-and-admissions/index.html">application and admissions guidance</a>
+        and submit your official application through the
+        <a href="https://gradapply.ualberta.ca/portal/app-manage">graduate application portal</a>.
+      </p>
+      <ul>
+        <li>
+          Select Li Wu as one of your potential supervisors in your application,
+          if that option is available.
+        </li>
+        <li>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScuCTDtrFmIIDQtigbPf3uJAygap48OoctuP4akr9CLDMFkUA/viewform?usp=dialog">Fill out the interest form</a>
+          so that we can learn about your background and research interests.
+        </li>
+      </ul>
+      <p>
+        There is no need to email separately to inquire about your application.
+        Please note that the LIDS interest form does not replace the official
+        University of Alberta graduate application.
+      </p>
+    </section>
+
+    <section aria-labelledby="current-students-heading">
+      <h3 id="current-students-heading">Current and Incoming Graduate Students</h3>
+      <p>
+        If you are already at the University of Alberta or are about to begin
+        your studies, please <a href="mailto:lwu15@ualberta.ca">email us</a>
+        with your CV and a brief note about your background and research interests.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer home-footer">
+    <div class="home-footer-inner">
+      <p>LIDS · University of Alberta</p>
+      <nav aria-label="Footer links">
+        <a href="mailto:lwu15@ualberta.ca">Email</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/lillywu">GitHub</a>
+        <span aria-hidden="true">·</span>
+        <a href="positions.html">Openings</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
